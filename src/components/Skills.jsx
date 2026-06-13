@@ -5,12 +5,14 @@ import { useTranslation } from 'react-i18next';
 import {
   SiLaravel, SiReact, SiJavascript, SiTailwindcss,
   SiMysql, SiHtml5, SiGit, SiFigma, SiPhp, SiPython,
-  SiAngular, SiTypescript, SiGitlab, SiJira,
+  SiAngular, SiTypescript, SiGitlab, SiJira, SiExpress, SiNextdotjs,
 } from 'react-icons/si';
 
 const skills = [
   { name: 'Laravel / PHP', level: 85, color: 'from-red-500 to-orange-400' },
   { name: 'React.js',      level: 80, color: 'from-cyan-500 to-blue-500' },
+  { name: 'Express.js',   level: 70, color: 'from-gray-500 to-gray-700' },
+  { name: 'Next.js',      level: 79, color: 'from-zinc-600 to-black' },
   { name: 'JavaScript',    level: 80, color: 'from-yellow-400 to-amber-500' },
   { name: 'Tailwind CSS',  level: 88, color: 'from-cyan-400 to-teal-500' },
   { name: 'MySQL',         level: 75, color: 'from-blue-500 to-indigo-600' },
@@ -40,6 +42,8 @@ const techIcons = [
   { icon: SiJira,       name: 'Jira',        color: '#0052CC', bg: '#EEF4FF' },
   { icon: SiAngular,    name: 'Angular',     color: '#DD0031', bg: '#FFF0F0' },
   { icon: SiTypescript, name: 'TypeScript',  color: '#3178C6', bg: '#EEF6FF' },
+  { icon: SiExpress,    name: 'Express.js',  color: '#333333', bg: '#F5F5F5' },
+  { icon: SiNextdotjs,  name: 'Next.js',     color: '#000000', bg: '#F2F2F2' },
 ];
 
 function SkillBar({ name, level, color, index, inView, learning }) {

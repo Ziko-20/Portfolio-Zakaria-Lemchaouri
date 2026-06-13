@@ -35,6 +35,15 @@ export default function Projects() {
 
   const allProjects = [
     {
+      id: 5, title: t('projects.items.p5_title'), category: 'web',
+      categoryLabel: t('projects.categories.web'),
+      description: t('projects.items.p5_desc'), image: '/project5.png',
+      tags: ['Node.js', 'Express.js', 'HTML5', 'CSS3', 'JavaScript', 'Groq API'],
+      liveLink: 'https://zakaria-s-chatbot.vercel.app/',
+      githubLink: 'https://github.com/Ziko-20/Zakaria-s-Chatbot',
+      accentColor: '#10b981', inProgress: false,
+    },
+    {
       id: 1, title: t('projects.items.p1_title'), category: 'web',
       categoryLabel: t('projects.categories.web'),
       description: t('projects.items.p1_desc'), image: '/project1.png',
