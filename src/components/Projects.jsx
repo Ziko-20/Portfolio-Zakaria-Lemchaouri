@@ -35,15 +35,6 @@ export default function Projects() {
 
   const allProjects = [
     {
-      id: 5, title: t('projects.items.p5_title'), category: 'web',
-      categoryLabel: t('projects.categories.web'),
-      description: t('projects.items.p5_desc'), image: '/project5.png',
-      tags: ['Node.js', 'Express.js', 'HTML5', 'CSS3', 'JavaScript', 'Groq API'],
-      liveLink: 'https://zakaria-s-chatbot.vercel.app/',
-      githubLink: 'https://github.com/Ziko-20/Zakaria-s-Chatbot',
-      accentColor: '#10b981', inProgress: false,
-    },
-    {
       id: 1, title: t('projects.items.p1_title'), category: 'web',
       categoryLabel: t('projects.categories.web'),
       description: t('projects.items.p1_desc'), image: '/project1.png',
@@ -51,15 +42,6 @@ export default function Projects() {
       liveLink: 'https://github.com/Ziko-20/GestionClients-Abonnements',
       githubLink: 'https://github.com/Ziko-20/GestionClients-Abonnements',
       accentColor: '#FF2D20', inProgress: false,
-    },
-    {
-      id: 2, title: t('projects.items.p2_title'), category: 'web',
-      categoryLabel: t('projects.categories.web'),
-      description: t('projects.items.p2_desc'), image: '/project2.png',
-      tags: ['React', 'JavaScript', 'localStorage', 'Tailwind'],
-      liveLink: 'https://to-do-react-xi-smoky.vercel.app/',
-      githubLink: 'https://github.com/Ziko-20/To-do-React.git',
-      accentColor: '#61DAFB', inProgress: false,
     },
     {
       id: 3, title: t('projects.items.p3_title'), category: 'fullstack',
@@ -79,6 +61,15 @@ export default function Projects() {
       liveLink: 'https://github.com/Ziko-20',
       githubLink: 'https://github.com/Ziko-20',
       accentColor: '#059669', inProgress: true,
+    },
+    {
+      id: 5, title: t('projects.items.p5_title'), category: 'web',
+      categoryLabel: t('projects.categories.web'),
+      description: t('projects.items.p5_desc'), image: '/project5.png',
+      tags: ['Node.js', 'Express.js', 'HTML5', 'CSS3', 'JavaScript', 'Groq API'],
+      liveLink: 'https://zakaria-s-chatbot.vercel.app/',
+      githubLink: 'https://github.com/Ziko-20/Zakaria-s-Chatbot',
+      accentColor: '#10b981', inProgress: false,
     },
   ];
 
