@@ -71,7 +71,9 @@ const resources = {
           p4_title: "AlMassar",
           p4_desc: "Plateforme d'apprentissage en ligne inspirée de Coursera, en cours de développement. Permettra de consulter, s'inscrire et suivre des cours dans différents domaines avec gestion des utilisateurs, des cours et des inscriptions via une interface moderne et responsive.",
           p5_title: "Zakaria's Chatbot",
-          p5_desc: "Chatbot web IA simple permettant aux utilisateurs de discuter en temps réel avec un LLM via une interface moderne. Utilise un backend Node.js pour gérer les requêtes API et intègre l'API Groq pour générer des réponses intelligentes avec le modèle LLaMA 3.3 70B."
+          p5_desc: "Chatbot web IA simple permettant aux utilisateurs de discuter en temps réel avec un LLM via une interface moderne. Utilise un backend Node.js pour gérer les requêtes API et intègre l'API Groq pour générer des réponses intelligentes avec le modèle LLaMA 3.3 70B.",
+          p6_title: "Liste de Produits",
+          p6_desc: "Application e-commerce débutant-friendly construite avec Next.js 14 et Tailwind CSS, utilisant la FakeStore API pour afficher des produits réels. Inclut un panier persistant via localStorage et une interface moderne."
         }
       },
       experience: {
@@ -200,7 +202,9 @@ const resources = {
           p4_title: "AlMassar",
           p4_desc: "An online learning platform inspired by Coursera, currently in development. Will allow users to browse, enroll in, and follow courses in various fields with user, course, and enrollment management via a modern and responsive interface.",
           p5_title: "Zakaria's Chatbot",
-          p5_desc: "A simple AI-powered web chatbot that allows users to chat in real time with an LLM through a clean and modern interface. Uses a Node.js backend to handle API requests and integrates the Groq API to generate intelligent responses using the LLaMA 3.3 70B model."
+          p5_desc: "A simple AI-powered web chatbot that allows users to chat in real time with an LLM through a clean and modern interface. Uses a Node.js backend to handle API requests and integrates the Groq API to generate intelligent responses using the LLaMA 3.3 70B model.",
+          p6_title: "Product List",
+          p6_desc: "A beginner-friendly e-commerce app built with Next.js 14 and Tailwind CSS, using the FakeStore API to display real products. Features a persistent cart via localStorage and a clean modern interface."
         }
       },
       experience: {
@@ -329,7 +333,9 @@ const resources = {
           p4_title: "AlMassar",
           p4_desc: "Eine Online-Lernplattform inspiriert von Coursera, derzeit in Entwicklung. Ermöglicht Nutzern, Kurse in verschiedenen Bereichen zu durchsuchen, sich anzumelden und zu verfolgen, mit Benutzer-, Kurs- und Einschreibungsverwaltung über eine moderne und responsive Oberfläche.",
           p5_title: "Zakaria's Chatbot",
-          p5_desc: "Ein einfacher KI-gestützter Web-Chatbot, der es Nutzern ermöglicht, in Echtzeit mit einem LLM über eine moderne Benutzeroberfläche zu chatten. Verwendet ein Node.js-Backend zur Verwaltung von API-Anfragen und integriert die Groq-API, um intelligente Antworten mit dem LLaMA 3.3 70B-Modell zu generieren."
+          p5_desc: "Ein einfacher KI-gestützter Web-Chatbot, der es Nutzern ermöglicht, in Echtzeit mit einem LLM über eine moderne Benutzeroberfläche zu chatten. Verwendet ein Node.js-Backend zur Verwaltung von API-Anfragen und integriert die Groq-API, um intelligente Antworten mit dem LLaMA 3.3 70B-Modell zu generieren.",
+          p6_title: "Produktliste",
+          p6_desc: "Eine einsteigerfreundliche E-Commerce-App, entwickelt mit Next.js 14 und Tailwind CSS, die die FakeStore API nutzt, um echte Produkte anzuzeigen. Mit persistentem Warenkorb via localStorage und moderner Benutzeroberfläche."
         }
       },
       experience: {

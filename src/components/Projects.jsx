@@ -71,6 +71,15 @@ export default function Projects() {
       githubLink: 'https://github.com/Ziko-20/Zakaria-s-Chatbot',
       accentColor: '#10b981', inProgress: false,
     },
+    {
+      id: 6, title: t('projects.items.p6_title'), category: 'web',
+      categoryLabel: t('projects.categories.web'),
+      description: t('projects.items.p6_desc'), image: '/project6.png',
+      tags: ['Next.js 14', 'Tailwind CSS', 'FakeStore API', 'React Icons', 'localStorage'],
+      liveLink: 'https://liste-de-produits-next-js.vercel.app/',
+      githubLink: 'https://github.com/Ziko-20/liste-de-produits-Next.js',
+      accentColor: '#0ea5e9', inProgress: false,
+    },
   ];
 
 
