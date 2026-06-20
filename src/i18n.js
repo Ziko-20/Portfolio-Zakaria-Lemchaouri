@@ -18,7 +18,7 @@ const resources = {
         title1: "Construire des applications web ",
         title_gradient: "robustes",
         title2: " de la base de données à l'interface.",
-        subtitle: "Développeur Fullstack spécialisé Laravel & React, passionné par les interfaces soignées et les architectures robustes.",
+        subtitle: "Développeur Fullstack passionné par le web, motivé, curieux et prêt à apprendre rapidement pour contribuer à des projets ambitieux.",
         explore: "Explorer mes projets",
         cv: "Télécharger mon CV",
         scroll: "Défiler"
@@ -149,7 +149,7 @@ const resources = {
         title1: "Building ",
         title_gradient: "robust",
         title2: " web applications from database to UI.",
-        subtitle: "Fullstack Developer specializing in Laravel & React, passionate about clean interfaces and solid architectures.",
+        subtitle: "Passionate Fullstack Developer, motivated and eager to learn — ready to grow fast and contribute to meaningful projects.",
         explore: "Explore Work",
         cv: "Download CV",
         scroll: "Scroll"
@@ -280,7 +280,7 @@ const resources = {
         title1: "Ich baue ",
         title_gradient: "robuste",
         title2: " Webanwendungen von der Datenbank bis zur Benutzeroberfläche.",
-        subtitle: "Fullstack-Entwickler mit Spezialisierung auf Laravel & React, leidenschaftlich für saubere Schnittstellen und solide Architekturen.",
+        subtitle: "Leidenschaftlicher Fullstack-Entwickler, motiviert und lernbereit — bereit, schnell zu wachsen und an bedeutsamen Projekten mitzuwirken.",
         explore: "Arbeit entdecken",
         cv: "Lebenslauf herunterladen",
         scroll: "Scrollen"

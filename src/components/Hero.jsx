@@ -181,10 +181,10 @@ export default function Hero() {
             <div className="flex items-center justify-center lg:justify-start gap-3">
               <div className="w-8 h-[2px] rounded-full hidden lg:block" style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
               <span className="text-lg md:text-xl font-display font-semibold" style={{ color: '#3f3f46' }}>
-                <TypeAnimation
-                  sequence={['Full Stack Developer', 2000, 'Laravel Expert', 2000, 'React Developer', 2000, 'Étudiant CS', 2000]}
+                {/* <TypeAnimation
+                  sequence={['Full Stack Developer', 2000, 'Étudiant CS', 2000]}
                   repeat={Infinity} speed={50}
-                />
+                /> */}
               </span>
             </div>
           </motion.div>
