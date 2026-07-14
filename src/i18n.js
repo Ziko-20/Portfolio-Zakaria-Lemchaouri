@@ -42,8 +42,12 @@ const resources = {
         title_gradient: "Technique",
         subtitle: "Outils et technologies que j'utilise au quotidien.",
         learning: "En cours d'apprentissage",
-        technologiesLabel: "Technologies",
-        toolsLabel: "Outils"
+        outOfFive: "{{count}} sur 5",
+        categories: {
+          backend: "Backend",
+          frontend: "Frontend",
+          tools: "Outils & Workflow"
+        }
       },
       techstack: {
         label: "Tech Stack",
@@ -177,8 +181,12 @@ const resources = {
         title_gradient: "Expertise",
         subtitle: "Tools and technologies I use on a daily basis.",
         learning: "Currently learning",
-        technologiesLabel: "Technologies",
-        toolsLabel: "Tools"
+        outOfFive: "{{count}} out of 5",
+        categories: {
+          backend: "Backend",
+          frontend: "Frontend",
+          tools: "Tools & Workflow"
+        }
       },
       techstack: {
         label: "Tech Stack",
@@ -312,8 +320,12 @@ const resources = {
         title_gradient: "Expertise",
         subtitle: "Werkzeuge und Technologien, die ich täglich nutze.",
         learning: "In Ausbildung",
-        technologiesLabel: "Technologien",
-        toolsLabel: "Werkzeuge"
+        outOfFive: "{{count}} von 5",
+        categories: {
+          backend: "Backend",
+          frontend: "Frontend",
+          tools: "Werkzeuge & Workflow"
+        }
       },
       techstack: {
         label: "Tech Stack",
