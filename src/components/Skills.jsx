@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import {
   SiLaravel, SiReact, SiJavascript, SiTailwindcss,
   SiMysql, SiHtml5, SiGit, SiFigma, SiPhp, SiPython,
-  SiAngular, SiTypescript, SiGitlab, SiJira, SiExpress, SiNextdotjs,
+  SiTypescript, SiGitlab, SiJira, SiExpress, SiNextdotjs, SiDocker,
 } from 'react-icons/si';
 
 const skills = [
@@ -23,27 +23,31 @@ const skills = [
   { name: 'Python',        level: 50, color: 'from-blue-400 to-yellow-400' },
   { name: 'SonarQube',     level: 78, color: 'from-sky-500 to-blue-600' },
   { name: 'Jira',          level: 75, color: 'from-blue-600 to-indigo-500' },
-  { name: 'Angular',       level: 0,  color: 'from-red-600 to-pink-500', learning: true },
+  { name: 'Docker',        level: 0,  color: 'from-blue-400 to-cyan-500', learning: true },
   { name: 'TypeScript',    level: 0,  color: 'from-blue-500 to-cyan-400', learning: true },
 ];
 
-const techIcons = [
+const technologies = [
   { icon: SiLaravel,    name: 'Laravel',     color: '#FF2D20', bg: '#FFF5F5' },
   { icon: SiReact,      name: 'React',       color: '#61DAFB', bg: '#F0FBFF' },
   { icon: SiPhp,        name: 'PHP',         color: '#777BB4', bg: '#F4F4FF' },
-  { icon: SiMysql,      name: 'MySQL',       color: '#4479A1', bg: '#F0F7FF' },
-  { icon: SiGit,        name: 'Git',         color: '#F05032', bg: '#FFF4F2' },
-  { icon: SiTailwindcss,name: 'Tailwind',    color: '#06B6D4', bg: '#F0FEFF' },
   { icon: SiJavascript, name: 'JavaScript',  color: '#F7DF1E', bg: '#FFFDE7' },
-  { icon: SiFigma,      name: 'Figma',       color: '#F24E1E', bg: '#FFF4F2' },
-  { icon: SiPython,     name: 'Python',      color: '#3776AB', bg: '#F0F7FF' },
-  { icon: ShieldCheck,  name: 'SonarQube',   color: '#4E9BCD', bg: '#F0F8FF', isLucide: true },
-  { icon: SiGitlab,     name: 'GitLab',      color: '#FC6D26', bg: '#FFF4EE' },
-  { icon: SiJira,       name: 'Jira',        color: '#0052CC', bg: '#EEF4FF' },
-  { icon: SiAngular,    name: 'Angular',     color: '#DD0031', bg: '#FFF0F0' },
   { icon: SiTypescript, name: 'TypeScript',  color: '#3178C6', bg: '#EEF6FF' },
+  { icon: SiPython,     name: 'Python',      color: '#3776AB', bg: '#F0F7FF' },
+  { icon: SiMysql,      name: 'MySQL',       color: '#4479A1', bg: '#F0F7FF' },
+  { icon: SiTailwindcss,name: 'Tailwind',    color: '#06B6D4', bg: '#F0FEFF' },
   { icon: SiExpress,    name: 'Express.js',  color: '#333333', bg: '#F5F5F5' },
   { icon: SiNextdotjs,  name: 'Next.js',     color: '#000000', bg: '#F2F2F2' },
+  { icon: SiHtml5,      name: 'HTML / CSS',  color: '#E34F26', bg: '#FFF4F2' },
+];
+
+const tools = [
+  { icon: SiGit,        name: 'Git',         color: '#F05032', bg: '#FFF4F2' },
+  { icon: SiGitlab,     name: 'GitLab',      color: '#FC6D26', bg: '#FFF4EE' },
+  { icon: SiDocker,     name: 'Docker',      color: '#2496ED', bg: '#EEF6FF' },
+  { icon: SiFigma,      name: 'Figma',       color: '#F24E1E', bg: '#FFF4F2' },
+  { icon: SiJira,       name: 'Jira',        color: '#0052CC', bg: '#EEF4FF' },
+  { icon: ShieldCheck,  name: 'SonarQube',   color: '#4E9BCD', bg: '#F0F8FF', isLucide: true },
 ];
 
 function SkillBar({ name, level, color, index, inView, learning }) {
@@ -131,30 +135,72 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* Tech icon grid */}
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
-            viewport={{ once: true }} transition={{ duration: 0.8 }}
-            className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-            {techIcons.map(({ icon: Icon, name, color, bg }, i) => (
-              <motion.div key={name}
-                initial={{ opacity: 0, scale: 0.85, y: 16 }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                whileHover={{ y: -6, scale: 1.05 }}
-                className="flex flex-col items-center gap-2 p-4 rounded-2xl transition-all duration-300 cursor-default"
-                style={{
-                  background: bg,
-                  border: `1px solid ${color}22`,
-                  animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
-                  animationDelay: `${i * 0.3}s`,
-                }}
-              >
-                <Icon size={28} style={{ color }} />
-                <span className="text-xs font-semibold text-center leading-tight" style={{ color: '#52525b' }}>{name}</span>
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Tech icon grid — Technologies + Tools */}
+          <div>
+            {/* Technologies */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.6 }}
+              className="mb-4">
+              <span className="text-xs font-mono font-semibold tracking-widest uppercase px-1" style={{ color: '#2563eb' }}>
+                {t('skills.technologiesLabel')}
+              </span>
+            </motion.div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
+              viewport={{ once: true }} transition={{ duration: 0.8 }}
+              className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-3 mb-8">
+              {technologies.map(({ icon: Icon, name, color, bg }, i) => (
+                <motion.div key={name}
+                  initial={{ opacity: 0, scale: 0.85, y: 16 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  whileHover={{ y: -6, scale: 1.05 }}
+                  className="flex flex-col items-center gap-2 p-4 rounded-2xl transition-all duration-300 cursor-default"
+                  style={{
+                    background: bg,
+                    border: `1px solid ${color}22`,
+                    animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
+                    animationDelay: `${i * 0.3}s`,
+                  }}
+                >
+                  <Icon size={28} style={{ color }} />
+                  <span className="text-xs font-semibold text-center leading-tight" style={{ color: '#52525b' }}>{name}</span>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Tools */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }} transition={{ duration: 0.6 }}
+              className="mb-4">
+              <span className="text-xs font-mono font-semibold tracking-widest uppercase px-1" style={{ color: '#2563eb' }}>
+                {t('skills.toolsLabel')}
+              </span>
+            </motion.div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
+              viewport={{ once: true }} transition={{ duration: 0.8 }}
+              className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              {tools.map(({ icon: Icon, name, color, bg }, i) => (
+                <motion.div key={name}
+                  initial={{ opacity: 0, scale: 0.85, y: 16 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  whileHover={{ y: -6, scale: 1.05 }}
+                  className="flex flex-col items-center gap-2 p-4 rounded-2xl transition-all duration-300 cursor-default"
+                  style={{
+                    background: bg,
+                    border: `1px solid ${color}22`,
+                    animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
+                    animationDelay: `${i * 0.3}s`,
+                  }}
+                >
+                  <Icon size={28} style={{ color }} />
+                  <span className="text-xs font-semibold text-center leading-tight" style={{ color: '#52525b' }}>{name}</span>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
