@@ -39,12 +39,18 @@ export default function About() {
               {t('about.title1')}<span className="text-gradient">{t('about.title_gradient')}</span>{t('about.title2')}
             </motion.h2>
 
-            <motion.p variants={itemVariants} className="text-base leading-relaxed mb-5" style={{ color: '#71717a' }}>
-              {t('about.p1')}
-            </motion.p>
-            <motion.p variants={itemVariants} className="text-base leading-relaxed mb-10" style={{ color: '#71717a' }}>
-              {t('about.p2')}
-            </motion.p>
+            <motion.p
+              variants={itemVariants}
+              className="text-base leading-relaxed mb-5"
+              style={{ color: '#71717a' }}
+              dangerouslySetInnerHTML={{ __html: t('about.p1') }}
+            />
+            <motion.p
+              variants={itemVariants}
+              className="text-base leading-relaxed mb-10"
+              style={{ color: '#71717a' }}
+              dangerouslySetInnerHTML={{ __html: t('about.p2') }}
+            />
 
             {/* Passion cards */}
             <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-10">

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import {
   SiLaravel, SiReact, SiJavascript, SiTailwindcss,
   SiMysql, SiHtml5, SiGit, SiFigma, SiPhp, SiPython,
-  SiGitlab, SiJira, SiExpress, SiNextdotjs, SiDocker,
+  SiGitlab, SiJira, SiExpress, SiNextdotjs, SiDocker, SiMongodb,
 } from 'react-icons/si';
 
 export default function Skills() {
@@ -21,6 +21,7 @@ export default function Skills() {
         { name: 'Express.js', level: 3, icon: SiExpress, color: '#333333' },
         { name: 'Python', level: 2, icon: SiPython, color: '#3776AB' },
         { name: 'MySQL', level: 4, icon: SiMysql, color: '#4479A1' },
+        { name: 'MongoDB', level: 3, icon: SiMongodb, color: '#47A248' },
       ]
     },
     {
